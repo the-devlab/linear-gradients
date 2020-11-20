@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.6;
+  color: rgb(0, 0, 0);
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+
+  background: linear-gradient(
+    70deg,
+    rgb(255, 255, 255) 80%,
+    rgb(214, 41, 119) 20%
+  );
+  padding: 2rem;
+  margin: 1rem 0;
+  border-radius: 0.6rem;
+  box-shadow: 1px 1px 4px 1px rgb(0, 0, 0);
+  text-align: center;
+  transition: all 0.2s;
+}
+
+/* added hover effect on li's */
+li:hover {
+  transform: rotate(2deg);
+  cursor: pointer;
+}
+
+img {
+  border-radius: 0.6rem;
+  width: 200px;
+}
+
+p {
+  font-size: 0.9rem;
+  word-wrap: break-word;
+  width: 200px;
+  min-height: 100px; /* incase one has text longer than another */
+  padding: 1rem 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* classes */
+.container {
+  height: 100vh; /* added for desktop display purposes */
+  padding: 5rem 0;
+  background: linear-gradient(
+    -140deg,
+    rgb(52, 58, 64) 50%,
+    rgb(214, 41, 119) 50%
+  );
+}
+
+.btn {
+  font-size: 1rem;
+  border-radius: 0.6rem;
+  border: none;
+  transition: all 0.2s;
+  color: rgb(255, 255, 255);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+/* create background classes for buttons */
+.btn--pink {
+  background: linear-gradient(
+    -70deg,
+    rgb(214, 41, 119) 80%,
+    rgb(255, 255, 255) 20%
+  );
+}
+
+.btn--grey {
+  background: linear-gradient(
+    -70deg,
+    rgb(52, 58, 64) 80%,
+    rgb(255, 255, 255) 20%
+  );
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    height: 100%;
+  }
+}
